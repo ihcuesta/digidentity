@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Download</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Visual-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="1440/Digidentity-News-Detail" transform="translate(-1187.000000, -312.000000)" stroke="#24304B">
+            <g id="Download-PDF" transform="translate(1032.000000, 308.000000)">
+                <g id="Download" transform="translate(156.000000, 5.000000)">
+                    <g id="03.Icon/small/Chevron-right-BG" transform="translate(11.000000, 13.000000) rotate(90.000000) translate(-11.000000, -13.000000) translate(3.500000, 5.500000)" stroke-width="2">
+                        <polyline id="Path-Copy-2" transform="translate(8.000000, 7.500000) rotate(-270.000000) translate(-8.000000, -7.500000) " points="2.5 10.5 8 4.5 8 4.5 13.5 10.5"></polyline>
+                    </g>
+                    <path d="M0.5,6 L0.5,21" id="Line-2" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M21.5,6 L21.5,21" id="Line-2-Copy" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M11,10.5 L11,31.5" id="Line-2-Copy-2" stroke-width="1.5" stroke-linejoin="round" transform="translate(11.000000, 21.000000) rotate(-90.000000) translate(-11.000000, -21.000000) "></path>
+                    <path d="M11,15 L11,0" id="Line-3" stroke-width="1.5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

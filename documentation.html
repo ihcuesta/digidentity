@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+     <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                   <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section>
+            <div class="content-block-services container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ml-4">
+                        <h1 class="h1-green mb-4"><b>Documentatie en certificaten</b>
+
+                        </h1>
+                        <h3 class="h3-green">Samenwerken</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="text-cert-block1 pr-4 pl-4 pt-5">
+           <h2 class="h2-blue pb-3">Documentatie</h2>
+           <p class="intro">
+               Ga aan de slag met onze handleidingen, certificaten en andere downloads.
+           </p>
+       </section>
+
+        <section>
+            <div class="content-block row">
+                <div class="col-lg-6 col-md-6 mb-5">
+                    <h2 class="h2-blue pb-4">
+                        Juridische documentatie
+                    </h2>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Algemene Voorwaarden</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">Privacy Verklaring</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">Complaints Procedure</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">Bewaarbeleid voor persoonsgegevens</a><br>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="h2-blue pb-4">
+                        CA documentatie
+                    </h2>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">Certificate Practice Statement for PKIoverheid certificates</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">PKI Disclosure Statement for PKIoverheid</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">Certificate Policy & Certificate Practice Statement </a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline">PKI Disclosure Statement for Digidentity</a><br>
+                </div>
+            </div>
+            <div class="content-block row">
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="h2-blue pb-4">
+                        Andere documentatie
+                    </h2>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">eHerkenning Gebruikersvoorwaarden</a><br>
+                    
+                </div>
+              
+            </div>
+            <div class="content-block row">
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="h2-blue">
+                       PKI Certificaten
+                    </h2>
+                </div>
+              
+            </div>
+             <div class="content-block row" style="margin-top: -50px;">
+                <div class="col-lg-6 col-md-6 mb-5">
+                     <h4 class="h4-blue pb-4" style="text-align: left;">
+                       Digidentity CA
+                    </h4>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Service Root CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity SSL CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Secure Email CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity SSCD Root CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Personal Qualified CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Business Qualified CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Personal Advanced CA</a><br>
+                </div>
+              <div class="col-lg-6 col-md-6">
+                     <h4 class="h4-blue pb-4" style="text-align: left;">
+                       PKIoverheid CA
+                    </h4>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Downloaden als PEM - G1</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Burger CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Organization CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity Services CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity SSCD CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Authorization Online SSCD - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity BV PKIoverheid Organization Server CA - G3</a><br>
+                </div>
+                
+            </div>
+            <div class="content-block row" style="margin-top: -20px;">
+             <div class="col-lg-6 col-md-6">
+                     <h4 class="h4-blue pb-4" style="text-align: left;">
+                       Solera CA
+                    </h4>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 ABZ CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 Burger CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 Organisatie CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 Root CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 Services CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Digidentity L3 SSCD CA - G2</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">TTP Services ABZ Nederland ABC CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">TTP Services ABZ Nederland DP CA</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">Machtiging Online SSCD CA - G2</a><br>
+                </div>
+            </div>
+             <div class="content-block row" style="margin-top: -20px;">
+             <div class="col-lg-6 col-md-6">
+                     <h2 class="h2-blue pb-4">
+                       Conformity Assessment Reports
+                    </h2>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">ISO27001:2013 – Certificate ISC 066</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">ETSI EN 319 411-1 – Certificate ETS 043</a><br>
+                    <a href="" class="body anchor-text" style="text-decoration: underline; ;">ETSI EN 319 411-2 – Certificate ETS 015</a><br>
+                    
+                </div>
+            </div>
+        </section>
+
+       <section class="text-cert-block1 pr-4 pl-4 pt-5">
+           <h2 class="h2-blue pb-3">Certificaten</h2>
+           <p class="intro">
+               Digidentity heeft certificeringen voor verschillende normen en voorschriften.
+           </p>
+       </section>
+       
+       <section>
+           <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/iso27001.svg" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       The ISO27001:2013 standard is a specification for an Information Security Management System (ISMS). An ISMS provides a policies and procedures for information security that includes risk management, security controls for logical and physical access controls, network security, human resource security, business continuity, incident management, operational security and compliance.
+                   </p>
+               </div>
+           </div>
+           <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/etsi319.svg" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       This standard defines the policy and security requirements for Trust Service Providers issuing public key certificates, including trusted web site certificates. Digidentity issues EU qualified certificates as part of our Domain Validated and Organisation Validated Server certificates and Secure Email certificates.
+                   </p>
+               </div>
+           </div>
+            <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/etsi319-2.svg" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       This standard defines the policy and security requirements for Trust Service Providers issuing EU qualified certificates for electronic signatures. Digidentity issues EU qualified certificates as part of our electronic signature service for eSGN and eSGN Seal in compliance with eIDAS requirements. Digidentity is audited annually on compliance to ETSI EN 319 411-2 by BSI Group Netherlands.
+                   </p>
+               </div>
+           </div>
+            <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/padlock.png" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       Digidentity is a Qualified Trust Service Provider (QTSP) as defined in EU Regulation 910/2014 also known as eIDAS. Digidentity is included on the "EU Trust List" for Trust Service Providers for issuance of EU qualified certificates. Digidentity is audited annually on compliance to eIDAS by Agentschap Telecom and by BSI Group Netherlands as part of the ETSI audit (certificate ETS 015).
+                   </p>
+               </div>
+           </div>
+           <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/pkioverheid.png" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       Digidentity is a Qualified Trust Service Provider (QTSP) as defined in EU Regulation 910/2014 also known as eIDAS. Digidentity is included on the "EU Trust List" for Trust Service Providers for issuance of EU qualified certificates. Digidentity is audited annually on compliance to eIDAS by Agentschap Telecom and by BSI Group Netherlands as part of the ETSI audit (certificate ETS 015).
+                   </p>
+               </div>
+           </div>
+           <div class="content-block row">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/eherkenning.svg" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       Digidentity is a Qualified Trust Service Provider (QTSP) as defined in EU Regulation 910/2014 also known as eIDAS. Digidentity is included on the "EU Trust List" for Trust Service Providers for issuance of EU qualified certificates. Digidentity is audited annually on compliance to eIDAS by Agentschap Telecom and by BSI Group Netherlands as part of the ETSI audit (certificate ETS 015).
+                   </p>
+               </div>
+           </div>
+           <div class="content-block row mb-5">
+               <div class="col-lg-3 col-md-4 mb-5">
+                   <img class="centered-img" src="img/scheme.png" alt="">
+               </div>
+               <div class="col-lg-9 col-md-8">
+                   <p class="body">
+                       Digidentity is a Qualified Trust Service Provider (QTSP) as defined in EU Regulation 910/2014 also known as eIDAS. Digidentity is included on the "EU Trust List" for Trust Service Providers for issuance of EU qualified certificates. Digidentity is audited annually on compliance to eIDAS by Agentschap Telecom and by BSI Group Netherlands as part of the ETSI audit (certificate ETS 015).
+                   </p>
+               </div>
+           </div>
+       </section>
+        
+<!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+    
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-mob', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+           
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

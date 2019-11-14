@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="50px" viewBox="0 0 180 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Button/Secundair ja nee Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="50" rx="7"></rect>
+    </defs>
+    <g id="Visual-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-23.000000, -7.000000)">
+            <g id="Button/Secundair-ja-nee" transform="translate(23.000000, 7.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect stroke="#1EC268" stroke-width="1.5" x="0.75" y="0.75" width="178.5" height="48.5" rx="7"></rect>
+                <text id="Ja" mask="url(#mask-2)" font-family="Helvetica" font-size="20" font-weight="normal" fill="#1EC268">
+                    <tspan x="94.4384766" y="35">Ja</tspan>
+                </text>
+                <g id="Icon/Vink" mask="url(#mask-2)" fill="#1EC268" fill-rule="evenodd">
+                    <g transform="translate(25.000000, 0.000000)" id="Combined-Shape">
+                        <path d="M30.6019135,30.2545861 L26.3490159,14.382556 C26.2298977,13.9380009 26.4937164,13.4810535 26.9382715,13.3619353 C27.3828266,13.2428171 27.8397741,13.5066359 27.9588922,13.951191 L32.4882255,30.8548929 C32.5679554,31.152449 32.4761263,31.4555569 32.2733715,31.6591966 C32.1214015,31.8205307 31.9057965,31.9212528 31.6666667,31.9212528 L22.5,31.9212528 C22.0397627,31.9212528 21.6666667,31.5481567 21.6666667,31.0879194 C21.6666667,30.6276821 22.0397627,30.2545861 22.5,30.2545861 L30.6019135,30.2545861 Z" transform="translate(27.091747, 22.627293) rotate(45.000000) translate(-27.091747, -22.627293) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

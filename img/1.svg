@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/S/Number</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/S/Number" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-Copy-4" fill="#1EC268" cx="25.5" cy="25.5" r="25.5"></circle>
+        <text id="Number" font-family="Raleway-Regular, Raleway" font-size="24" font-weight="normal" fill="#FFFFFF">
+            <tspan x="20.364" y="32">1</tspan>
+        </text>
+    </g>
+</svg>

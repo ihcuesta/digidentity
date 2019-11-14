@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1EC268;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#FFFFFF;stroke:#1EC268;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="-114" cy="25" r="24"/>
+	</g>
+	<g>
+		<rect x="-132.1" y="24" class="st1" width="34.3" height="1.7"/>
+		
+			<rect x="-113.6" y="30.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -52.5825 -64.2094)" class="st1" width="19.6" height="1.7"/>
+		
+			<rect x="-104.6" y="8.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -43.3357 -68.0361)" class="st1" width="1.7" height="19.6"/>
+	</g>
+</g>
+<circle class="st2" cx="-45" cy="25" r="23.6"/>
+<g>
+	
+		<rect x="-51.2" y="29.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -34.0956 -21.4808)" class="st0" width="16.5" height="1.3"/>
+	
+		<rect x="-43.7" y="11.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -26.517 -24.6576)" class="st0" width="1.3" height="16.5"/>
+</g>
+<g>
+	<circle class="st3" cx="25" cy="25" r="23.6"/>
+	<polygon class="st3" points="32.9,25 23.1,13.3 23.1,36.7 	"/>
+</g>
+</svg>

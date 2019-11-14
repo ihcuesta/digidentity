@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+     <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section>
+            <div class="content-block-services container pr-5 pl-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1 class="h1-green mb-4"><b>Contact</b>
+                        </h1>
+                        <h3 class="h3-green pb-5">Heb je een vraag?</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p class="body-green contact-info">+44(0)330 05 83 454</p>
+                        <div class="clear"></div>
+                        <p class="body-green contact-info" style="text-decoration: underline;">Helpdesk@digidentity.co.uk</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="offwhite-bg pt-2 ">
+            <div class="content-block-standard pr-5 pl-5 pb-5">
+                <h2 class="h2-blue centered-text">Veelgestelde vragen</h2>
+
+                <div class="contact-options">
+                    <div id="block-tech1" class="block-tech" style="border: 0px solid #FFF;">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">Digidentity account</p>
+
+                            </div>
+                            <button type="button" onclick="show1()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+
+                            <ul class="contact-list">
+                                <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div id="block-tech3" class="block-tech">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">Mijn account</p>
+
+                            </div>
+                            <button type="button" onclick="show3()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+                            <ul class="contact-list">
+                              <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="block-tech4" class="block-tech">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">PKI overheid certificaten</p>
+
+                            </div>
+                            <button type="button" onclick="show4()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+                            <ul class="contact-list">
+                                <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="block-tech5" class="block-tech">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">Privacy policy</p>
+
+                            </div>
+                            <button type="button" onclick="show5()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+                            <ul class="contact-list">
+                                 <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="block-tech6" class="block-tech">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">Mijn ZLM</p>
+
+                            </div>
+                            <button type="button" onclick="show6()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+                            <ul class="contact-list">
+                                <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="block-tech2" class="block-tech">
+                        <div class="title-tech">
+                            <div class="text-title-tech">
+                                <p class="body pt-2">Andere acties</p>
+
+                            </div>
+                            <button type="button" onclick="show2()" class="plus tcon tcon-plus tcon-plus--minus" aria-label="add item">
+                                <span class="tcon-visuallyhidden">add item</span>
+                            </button>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="text-tech">
+                            <ul class="contact-list">
+                                <li><a href="contact2.html" class="body">Nieuwe twee factor authenticatie aanmaken</a></li>
+                                <li><a href="contact2.html" class="body">Hoe kan ik mijn Smartcard overzetten naar een…</a></li>
+                                <li><a href="contact2.html" class="body">Mijn smartcard herstellen</a></li>
+                                <li><a href="contact2.html" class="body">Inloggegevens verloren</a></li>
+                                <li><a href="contact2.html" class="body">Wachtwoord vergeten</a></li>
+                                <li><a href="contact2.html" class="body">SMS authenticator wijzigen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="content-block pl-4 pr-4 pb-5">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-10  col-10  neg-marg2 ">
+                        <div class="img-rounded img-contact">
+
+                        </div>
+                    </div>
+                    <div class="grey-box gr col-lg-6 col-md-6">
+                        <h2 class="h2-blue mb-4">
+                            Kunnen we je ergens anders mee helpen?
+                        </h2>
+                        <p class="body">
+                            Heb je nog geen antwoord gevonden op je vraag, neem dan contact op met ons.
+                        </p>
+                        <div class="pt-2" style="text-align: center;"><button class="green-button button-niveau" onclick="showForm();">Neem contact op</button></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-prefooter pt-4 pb-5">
+            <div class="content-block pr-5 pl-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-6 pr-5">
+                        <h2 class="h2-white">Blijf op de hoogte</h2>
+                        <p class="intro pt-4" style="color: #FFF;">Schrijf je in voor de nieuwsbrief en wij geven je een maandelijkse update </p>
+                    </div>
+                    <div class="col-lg-6" style="">
+                        <form class="form-pc" action="">
+                            <div class="cont-input"><input class="input-prefooter" type="text"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="dark-bg" onclick="showForm();">
+            <section id="modal-form" onclick="showForm();">
+                <i class="x fas fa-times" onclick="showForm();"></i>
+                <h2 class="h2-blue">Andere vraag?<br>
+                    Wij helpen je graag verder</h2>
+                <p class="body">Wij streven er naar binnen 24 uur een antwoord te sturen.</p>
+                <div class="container-categories">
+                    <div onclick="cleanAll(); catActive1();" class="cat hidden clean" data-number="0">
+                        <img class="centered-img blue-icon" width="30" height="30" src="img/cat1.svg" alt="">
+
+                        <p class=" pt-2">Overheid</p>
+                    </div>
+                    <div class="cat-active visible clean">
+                        <img class="centered-img " width="30" height="30" src="img/cat1w.svg" alt="">
+                        <p class=" pt-2">Overheid</p>
+                    </div>
+                    <div onclick="cleanAll();  catActive2()" class="cat visible clean" data-number="1">
+                        <img class="centered-img blue-icon" width="30" height="30" src="img/cat2.svg" alt="">
+
+                        <p class=" pt-2">Persoonlijk</p>
+                    </div>
+                    <div class="cat-active hidden clean">
+                        <img class="centered-img " width="30" height="30" src="img/cat2w.svg" alt="">
+                        <p class=" pt-2">Persoonlijk</p>
+                    </div>
+                    <div onclick="cleanAll(); catActive3()" class="cat visible clean" data-number="2">
+                        <img class="centered-img blue-icon" width="30" height="30" src="img/cat3.svg" alt="">
+
+                        <p class="pt-2">Zakelijk</p>
+                    </div>
+                    <div class="cat-active hidden clean">
+                        <img class="centered-img " width="30" height="30" src="img/cat3w.svg" alt="">
+                        <p class=" pt-2">Zakelijk</p>
+                    </div>
+                </div>
+
+
+                <!-- Each form allows a different configuration to send to a different email address. Each one activates when the user makes a selection in the categories section -->
+                <!-- FORM 1 -->
+                <form class="form visible clean" action="">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <input class="input-cont" placeholder="Naam" type="email">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <textarea class="text-area" placeholder="Stel je vraag, we komen zo snel mogelijk bij je terug" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="submit"><input value="Verstuur" class="green-button button-niveau" type="submit"></div>
+                </form>
+
+                <!-- FORM 2 -->
+                <form class="form hidden clean" action="">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <input class="input-cont" placeholder="Naam" type="email">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <textarea class="text-area" placeholder="Stel je vraag, we komen zo snel mogelijk bij je terug" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="submit"><input value="Verstuur" class="green-button button-niveau" type="submit"></div>
+                </form>
+
+                <!-- FORM 3 -->
+                <form class="form hidden clean" action="">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <input class="input-cont" placeholder="Naam" type="email">
+                    <input class="input-cont" placeholder="Naam" type="text">
+                    <textarea class="text-area" placeholder="Stel je vraag, we komen zo snel mogelijk bij je terug" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="submit"><input value="Verstuur" class="green-button button-niveau" type="submit"></div>
+                </form>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="js/transformicons.js"></script>
+    <script>
+        transformicons.add('.tcon')
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+
+
+    <main>
+        <section style="padding-top: 50px;">
+            <div class="content-block pl-5 pr-5">
+                <a href="vacancies.html" class="contact-back body"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Werken bij Digidentity</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-block pl-5 pr-5">
+                <h1 class="h1-blue">Ruby developer</h1>
+                <h4 class="h4-blue pt-3" style="text-align: left;">Full time | 40 uur</h4>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="content-block-standard mt-5 pl-5 pr-5">
+                <div class="content-vacancy">
+                    <p class="body">
+                        Are you an experienced Ruby Developer and currently looking for a new challenge? Would you like to
+                        work on developing online services in a socially responsible industry? At Digidentity you’re at the right
+                        address. We’re looking for a Ruby Developer available to join our team immediately.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-block pl-5 pr-5">
+                <h2 class="h2-blue mb-4">Wat kun je verwachten</h2>
+                <ul class="vacancy-list">
+                    <li><span>Working on the latest technologies in identity management</span></li>
+                    <li><span>Informal office atmosphere</span></li>
+                    <li><span>An enthusiastic development team, where you can make a difference and where we promote innovation.</span></li>
+                    <li><span>Taking responsibility and sharing knowledge are key</span></li>
+                    <li><span>We work with Agile methodologies, following the Scrum methodology</span></li>
+                    <li><span>Digidentity consists of 80 international team members. Free lunch is offered, and you can enjoy it together with your team. Coffee,</span></li>
+                    <li><span>tea, fruit and soft drinks are always available</span></li>
+                    <li><span>An easily accessible office location, next to The Hague HS station, and travel expenses arecovered. </span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-block pl-5 pr-5">
+                <h2 class="h2-blue mb-4">Wat wij verwachten</h2>
+                <ul class="vacancy-list">
+                    <li><span>You have a high standard of coding, knowledge in the best practices of the used frameworks,
+                            and of course curiosity and interest in the developments within;</span></li>
+                    <li><span>You have a passion for the domain and want to share your knowledge with others</span></li>
+                    <li><span>You are open, proactive, constructive in criticism, and have a team-player attitude; </span></li>
+                    <li><span>You feel comfortable in the strong and fast changing sector in which Digidentity operates</span></li>
+                    <li><span>Domain knowledge is a plus but not necessary</span></li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="offwhite-bg pb-5">
+            <div class="content-block pl-5 pr-5 pb-5">
+               <h2 class="h2-blue mb-5">Kennis en ervaring</h2>
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <ul class="vacancy-list pr-3">
+                            <li><span>2+ years of experience as a Ruby (on Rails) developer</span></li>
+                            <li><span>Experienced in interacting with RESTful APIs</span></li>
+                            <li><span>Solid knowledge of Git</span></li>
+                            <li><span>Good understanding and knowledge of English- spoken and written</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="vacancy-list pr-3">
+                            <li><span>Knowledge of SAML, PKI and cryptography are a plus</span></li>
+                            <li><span>Knowledge of DevOps practices is a plus</span></li>
+                            <li><span>A mindset to create and maintain development documentation</span></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+           <button class="green-button button-cert">Soliciteren</button>
+      
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="js/transformicons.js"></script>
+    <script>
+        transformicons.add('.tcon')
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

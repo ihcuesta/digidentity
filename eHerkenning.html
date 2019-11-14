@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+     <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                   <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section class="block-img-ehekernning">
+            <div class="content-block-standard container">
+                <div class="row bottom-align">
+                    <div class="col-lg-5 col-md-8 ml-4">
+                        <h1 class="h1-white">
+                            eHekernning
+                        </h1>
+
+                        <button class="green-button">Contact&nbsp;sales&nbsp;team</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="centered-text pr-5 pl-5">
+            <h2 class="h2-blue" style="margin-bottom: 30px;"><b>Aantonen dat je bent<br>wie je zegt dat je bent</b></h2>
+            <p class="body">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            </p>
+
+        </section>
+
+        <section class="video">
+            <div class="text-video">
+                <h2 class="h2-white" style="margin-bottom: 30px;">Digidentity voor<br>eHerkenning</h2>
+                <img width="70" height="70" src="img/play.svg" alt="" style="margin-bottom: 30px;">
+                <p class="body-small-white">30 seconds introduction video</p>
+            </div>
+        </section>
+
+        <section class="offwhite-bg niveaus">
+<!--            <div class="bg"></div>-->
+            <div class="content-block-g pr-5 pl-5">
+                <h2 class="h2-blue">Betrouwbaar<br>op alle niveaus</h2>
+                <p class="body intro-niveaus-text">EHerkenningsmiddelen bestaan op meerdere betrouwbaarheidsniveaus dit op van laag tot zeer hoog (4).<br>Hierbij verschilt het niveau van zekerheid, inlogmethode de prijs en de aanvraagprocedure. Bij een hoger betrouwbaarheidsniveau is de identiteitscheck uitgebreider.</p>
+            </div>
+
+           
+
+        </section>
+
+<section class="niveaus-items">
+    <div class="content-block">
+         <div class="content-block-g row niveau-items">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 niveau-item ">
+                    <div class="col-lg-12 niveau-item-content">
+                        <img class="img-niv1" src="img/niveau1.png" alt="">
+                        <div class="niveau-content">
+                            <h3 class="intro">Niveau 1</h3>
+                            <h3 class="h3-green">€0.75,-</h3>
+                            <p class="body-green under-price">per maand ex. btw</p>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/circle.svg" alt="">
+                                <p class="list-text" class="body">Per medewerker</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per bedrijf</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Maandelijks</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Jaarlijkse afsluiting</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <button class="green-button button-niveau" style="margin-top: 97px;">Aanvragen&nbsp;EH1</button>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 niveau-item ">
+                    <div class="col-lg-12 niveau-item-content">
+                        <img class="img-niv1" src="img/niveau2.png" alt="">
+                        <div class="niveau-content">
+                            <h3 class="intro">Niveau 1</h3>
+                            <h3 class="h3-green">€1.75,-</h3>
+                            <p class="body-green under-price">per maand ex. btw</p>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per medewerker</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per bedrijf</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Maandelijks</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Jaarlijkse afsluiting</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <button class="green-button button-niveau" style="margin-top: 97px;">Aanvragen&nbsp;EH1</button>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 niveau-item ">
+                    <div class="col-lg-12 niveau-item-content">
+                        <img style="position: absolute; top: -30px;" class="img-niv1 niv4" src="img/niveau4.png" alt="">
+                        <img style="position: absolute; top: -30px;" class="img-niv1 niv4-s" src="img/niveau4-s.png" alt="">
+                        <div class="niveau-content" style="padding-top: 54px;">
+                            <h3 class="intro">Niveau 1</h3>
+                            <h3 class="h3-green">€0.75,-</h3>
+                            <p class="body-green under-price">per maand ex. btw</p>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per medewerker</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per bedrijf</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Maandelijks</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Jaarlijkse afsluiting</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/circle.svg" alt="">
+                                <p class="list-text body-green" style="font-size: 16px;">Eenmalig €17,50 face-to-face controle</p>
+                                  <div class="clear"></div>
+                            </div>
+                            
+                            <button class="green-button button-niveau">Aanvragen&nbsp;EH1</button>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 niveau-item ">
+                    <div class="col-lg-12 niveau-item-content">
+                        <img class="img-niv1" src="img/niveau3.png" alt="">
+                        <div class="niveau-content">
+                            <h3 class="intro">Niveau 1</h3>
+                            <h3 class="h3-green">€6,-</h3>
+                            <p class="body-green under-price">per maand ex. btw</p>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per medewerker</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Per bedrijf</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Maandelijks</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <div class="list-row">
+                                <img class="list-icon" src="img/check.svg" alt="">
+                                <p class="list-text" class="body">Jaarlijkse afsluiting</p>
+                                  <div class="clear"></div>
+                            </div>
+                             <div class="list-row">
+                                <img class="list-icon" src="img/circle.svg" alt="">
+                                <p class="list-text body-green" style="font-size: 16px;">Eenmalig €17,50 face-to-face controle</p>
+                                  <div class="clear"></div>
+                            </div>
+                            <button class="green-button button-niveau">Aanvragen&nbsp;EH1</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+    
+</section>
+
+<section>
+    <div class="content-block pr-3 pl-3">
+        <div class="img-dog"></div>
+    </div>
+    <div class="content-dog">
+        <h2 class="h2-blue title-dog">Wat heb je nodig bij de aanvraag?</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <img class="numbers-dog" src="img/1.svg" alt="">
+                <p class="intro-centered intro-dog">Waar wil je toegang tot hebben</p>
+                <p class="body text-dog">Bedenk vooraf tot welke dienst(en) je toegang wilt hebben. Dit bepaalt het betrouwbaarheidsnive</p>
+            </div>
+             <div class="col-lg-3 col-md-12">
+                 <img class="numbers-dog" src="img/2.svg" alt="">
+                 <p class="intro-centered intro-dog">Toestemming krijgen van een bevoegde</p>
+                 <p class="body text-dog">De bedrijfsbeheerder dient toestemming te geven en hiermee te verifiëren dat je medewerker bent van</p>
+            </div>
+             <div class="col-lg-3 col-md-12">
+                 <img class="numbers-dog" src="img/3.svg" alt="">
+                 <p class="intro-centered intro-dog">Gegevens en documenten bij de hand</p>
+                 <p class="body text-dog">Afhankelijk van het betrouwbaarheidsniveau hebben wij weinig, of meer gegevens nodig. Houd ook het KvK-nummer bij de hand.</p>
+            </div>
+             <div class="col-lg-3 col-md-12">
+                 <img class="numbers-dog" src="img/4.svg" alt="">
+                 <p class="intro-centered intro-dog">Je bent klaar, registratie is voldaan</p>
+                 <p class="body text-dog">Lorem ipsum dolor sit amet consectetur adipiscing elit sed.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+        <section class="block">
+            <div class="content-block container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 neg-marg2 ">
+                        <div class="img-rounded img-block2">
+
+                        </div>
+                    </div>
+                    <div class="grey-box gr col-lg-6 col-md-6 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Fysieke identificatie bij eHerkenning niveau 4
+                        </h2>
+                        <p class="body">
+                            Middelen kunnen online aangevraagd worden. Voor een eHerkenningsmiddel met betrouwbaarheidsniveau 4 is ook een face-to-face controle nodig. Dit gebeurt bij ons op kantoor of op een locatie naar keuze.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="grey-box gl col-lg-6 col-md-6 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Uitgave van het eHerkenningsmiddel
+                        </h2>
+                        <p class="body">
+                            Na het doorlopen van de stappen in het registratieproces wordt het middel uitgegeven. Houd er rekening mee dat sommige stappen in het registratieproces handmatige controles zijn, die alleen tussen half 9 en 17 uur gedaan worden.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 neg-marg ">
+                        <div class="img-rounded img-block2">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+        
+        
+        <section class="block" style="margin-top: 80px;">
+            <div class="content-block-narrow container">
+                <div class="row">
+                    <div class="grey-box gl col-lg-8 col-md-6 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Vestrekken van machtigingen en ketenmachtigingen
+                        </h2>
+                        <p class="body">
+                            Een eHerkenningsmiddel is persoonsgebonden en kan niet worden gedeeld of overgedragen. Een machtiging wordt daarom per persoon en per dienst afgegeven. 
+Een machtiging kan worden verstrekt door iemand die tekenbevoegd is volgens het Handelsregister. Indien je niet tekenbevoegd bent, dan moet je eerst gemachtigd worden door een tekenbevoegd persoon. 
+<br><br>
+Met een ketenmachtiging kunnen organisaties andere organisaties machtigen om namens hen een online dienst af te nemen met eHerkenning.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 neg-marg ">
+                        <div class="img-rounded img-office">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<section class="block" style="margin-bottom: 80px;">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="grey-box gl col-lg-6 col-md-6 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            eHekernning nodig voor je organisatie?
+                        </h2>
+                        <p class="body">
+                            Met Digidentity maak je jouw diensten velig online toegankelijk.
+                        </p>
+                        <button class="green-button button-niveau">eHekernningsmakelaar</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 neg-marg ">
+                        <div class="img-rounded img-block1">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="block" style="margin-bottom: 80px;">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ml-4">
+                        <h3 class="h3-blue mb-4">
+                            Digidentity verleent service aan
+                        </h3>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/netherlands.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/canada.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/european-comission.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/Gov-UK.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

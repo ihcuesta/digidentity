@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                   <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section>
+            <div class="content-block-services container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ml-4">
+                        <h1 class="h1-green mb-4"><b>Over Digidentity</b>
+
+                        </h1>
+                        <h3 class="h3-green">Leers ons kennen</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="text-cert-block1 pr-4 pl-4 pt-5">
+           <h2 class="h2-blue pb-3">Waarom Digidentity?</h2>
+           <p class="intro">
+               Bijna iedereen laat op internet een digitaal spoor achter van hun persoonlijke gegevens en identiteit. Bijvoorbeeld bij het doen van aankopen bij webwinkels, of op social media. Deze activiteiten zijn niet altijd veilig, en fraudeurs zijn altijd op zoek naar nieuwe manieren om andermans persoonlijke gegevens in handen te krijgen. 
+           </p>
+       </section>
+        
+        <section class="offwhite-bg pb-2">
+            <div class="content-block-g">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <img class="mr-4 icon-text"  width="120" height="120" src="img/services1.png" alt="">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 pl-5">
+                        <h3 class="h3-blue pb-4">Onze services</h3>
+                        <p class="body">
+                            Als je online zaken doet als bedrijf, moet je er zeker van zijn met wie je te maken hebt. Omgekeerd moet de persoon die zich aanmeldt bij jouw digitale dienst erop kunnen rekenen dat zijn gegevens correct worden verwerkt. Klanten loggen in op jouw website of dienst met hun digitale identiteit (Digidentity) en kunnen zo hun zaken veilig en eenvoudig uitvoeren.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="swiper-about">
+      
+        <div class="content-block-g swiper-about-container">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-services ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+
+                        <div class="swiper-slide slider-serv-item serv-item2">
+                            <img class="icon" src="img/icon6.png" alt="">
+                            <h5 class="h3-white mb-4">SBR certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item3">
+                            <img class="icon" src="img/icon6.png" alt="">
+                            <h5 class="h3-white mb-4">Beroeps certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="top: 58% !important;"></div>
+                <div class="swiper-button-prev" style="top: 58% !important;"></div>
+            </div>
+            
+             <!-- Swiper Mobile -->
+                <div class="swiper-container-mob swiper-services-mobile swiper-about-mob pl-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+
+                        <div class="swiper-slide slider-serv-item serv-item2">
+                            <img class="icon" src="img/icon6.png" alt="">
+                            <h5 class="h3-white mb-4">SBR certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item3">
+                            <img class="icon" src="img/icon6.png" alt="">
+                            <h5 class="h3-white mb-4">Beroeps certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide slider-serv-item serv-item1">
+                            <img class="icon" src="img/icon3.png" alt="">
+                            <h5 class="h3-white mb-4">SSL certificaten</h5>
+                            <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination pagination-about-mob"></div>
+                </div>
+
+        
+        </section>
+        
+           <section class="block">
+            <div class="content-block pl-4 pr-4">
+                <div class="row">
+                    <div class="grey-box gl col-lg-8 col-md-8 col-sm-12">
+                        <h2 class="h2-blue mb-4">
+                            Voor bedrijven
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4  col-sm-10  col-10 neg-marg ">
+                        <div class="img-rounded img-about1">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+          
+<!--
+           <section class="block">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="grey-box gl col-lg-8 col-md-8 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Voor bedrijven
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 neg-marg ">
+                        <div class="img-rounded img-about1">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+-->
+
+      <section class="block">
+            <div class="content-block pl-4 pr-4">
+                <div class="row">
+                    <div class="img-right col-sm-2 col-2 "></div>
+
+                    <div class="col-lg-4 col-md-4  col-sm-10   col-10  neg-marg2 ">
+                        <div class="img-rounded img-about2">
+
+                        </div>
+                    </div>
+                    <div class="grey-box gr col-lg-8 col-md-8">
+                        <h2 class="h2-blue mb-4">
+                           Voor persoonlijk gebruik
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+       
+<!--
+       <section class="block">
+            <div class="content-block container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 neg-marg2 ">
+                        <div class="img-rounded img-about2">
+
+                        </div>
+                    </div>
+                    <div class="grey-box gr col-lg-8 col-md-8 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Voor persoonlijk gebruik
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+-->
+        
+         <section class="block">
+            <div class="content-block pl-4 pr-4">
+                <div class="row">
+                    <div class="grey-box gl col-lg-8 col-md-8 col-sm-12">
+                        <h2 class="h2-blue mb-4">
+                            Voor de overheid
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4  col-sm-10  col-10 neg-marg ">
+                        <div class="img-rounded img-about3">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+<!--
+        <section class="block">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="grey-box gl col-lg-8 col-md-8 ml-4">
+                        <h2 class="h2-blue mb-4">
+                            Voor de overheid
+                        </h2>
+                        <p class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 neg-marg ">
+                        <div class="img-rounded img-about3">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+-->
+        
+         <section class="block4 block4-img" style="margin-bottom: 0px;">
+            <div class="content-block row pl-4 pr-4">
+                <div class="frame-white col-lg-6 col-md-12">
+                    <h2 class="h2-blue-centered">
+                        Wij staan altijd 
+voor u klaar
+                    </h2>
+                    <p class="body">
+                        Neem contact met ons op om de mogelijkheden te bespreken rondom veiligheid van je business. Een van onze medewerkers zorgt dat uw vraag meteen wordt beantwoord. Wij denken verder om samen tot de beste oplossing te komen.
+                    </p>
+                    <button class="green-button" style="display: block; margin: auto;">
+                        Neem contact op
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+    
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-mob', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+           
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

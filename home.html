@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+       
+    <!-- MAIN -->
+                   <main>
+        <section class="block-img home-img">
+            <div class="content-block-standard ">
+                <div class="row bottom-align">
+                    <div class="col-lg-5 col-md-8 ml-5">
+                        <h1 class="h1-white">
+                            Met een gerust hart je persoonlijke gegevens delen
+                        </h1>
+                        <h3 class="h3-white mb-4">Eligen online identiteit</h3>
+                        <button class="green-button">Account aanmaken</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="content-block pl-4 pr-4">
+                <div class="row">
+                    <div class="grey-box gl col-lg-6 col-md-6 col-sm-12">
+                        <h2 class="h2-blue mb-4">
+                            Jet identiteit veilig online te gebruiken
+                        </h2>
+                        <p class="intro">
+                            Met een gerust hart je persoonlijke gegevens delen
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6  col-sm-10  col-10 neg-marg ">
+                        <div class="img-rounded img-block1">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="content-block pl-4 pr-4">
+                <div class="row">
+                    <div class="img-right col-sm-2 col-2 "></div>
+
+                    <div class="col-lg-6 col-md-6  col-sm-10   col-10  neg-marg2 ">
+                        <div class="img-rounded img-block2">
+
+                        </div>
+                    </div>
+                    <div class="grey-box gr col-lg-6 col-md-6">
+                        <h2 class="h2-blue mb-4">
+                            Jet identiteit veilig online te gebruiken
+                        </h2>
+                        <p class="intro">
+                            Met een gerust hart je persoonlijke gegevens delen
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section style="text-align: center; margin-top: 80px;">
+            <button class="green-button">Account aanmaken</button>
+        </section>
+
+        <section style="text-align: center; margin-top: 80px;">
+            <h2 class="h2-blue">
+                Jet identiteit veilig online te gebruiken
+            </h2>
+        </section>
+
+        <section class="masonry ">
+            <div class="content-block row pl-4 pr-4">
+                <a href="eHerkenning.html" class="grid-item rows2 col-lg-6 col-md-6 item1">
+                    <img class="icon" src="img/icon3.png" alt="">
+                    <h5 class="h3-masonry mb-4">eHerkenning</h5>
+                    <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                </a>
+                <a href="eHerkenning.html" class="grid-item rows2 col-lg-3 col-md-3 item2">
+                    <img class="icon" src="img/icon4.png" alt="">
+                    <h5 class="h3-masonry mb-4">Gov.UK Verify</h5>
+                    <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                </a>
+                <div class="rows2 col-lg-3 col-md-3 item-pack1">
+                    <a href="certificates.html"><div class="grid-item rows1 item3">
+                        <img class="icon" src="img/icon6.png" alt="">
+                        <h5 class="h3-masonry mb-4">SBR certificaten</h5>
+                        <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                    </div></a>
+                    <a href="certificates.html"><div class="grid-item rows1 item4">
+                        <img class="icon" src="img/icon6.png" alt="">
+                        <h5 class="h3-masonry mb-4">SSL certificaten</h5>
+                        <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                    </div></a>
+                </div>
+                <div class="col-lg-3 col-md-3">
+
+                </div>
+                <a href="esgn.html" class="grid-item rows1 col-lg-3 col-md-3 item5">
+                    <img class="icon" src="img/icon5.png" alt="">
+                    <h5 class="h3-masonry mb-4">eSGN</h5>
+                    <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                </a>
+                <a href="certificates.html" class="grid-item rows2 col-lg-3 col-md-3 item6">
+                    <img class="icon" src="img/icon7.png" alt="">
+                    <h5 class="h3-masonry mb-4">Digitale paspoorten</h5>
+                    <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                </a>
+                <a href="certificates.html" class="grid-item rows1 col-lg-3 col-md-3 item7">
+                    <img class="icon" src="img/icon7.png" alt="">
+                    <h5 class="h3-masonry mb-4">Beroeps certificaten</h5>
+                    <div class="arrow-container"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- Swiper -->
+        <div class="swiper-container swiper-home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide grid-item item1">
+                    <img class="icon" src="img/icon3.png" alt="">
+                    <h5 class="h3-white mb-4">eHerkenning</h5>
+                    <p class="body-small-left-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="swiper-slide grid-item item2">
+                    <img class="icon" src="img/icon4.png" alt="">
+                    <h5 class="h3-white mb-4">Gov.UK Verify</h5>
+                </div>
+                <div class="swiper-slide grid-item item3">
+                    <img class="icon" src="img/icon6.png" alt="">
+                    <h5 class="h3-white mb-4">SBR certificaten</h5>
+                </div>
+                <div class="swiper-slide grid-item item4">
+                    <img class="icon" src="img/icon6.png" alt="">
+                    <h5 class="h3-white mb-4">SSL certificaten</h5>
+                </div>
+                <div class="swiper-slide grid-item item5">
+                    <img class="icon" src="img/icon5.png" alt="">
+                    <h5 class="h3-white mb-4">eSGN</h5>
+                </div>
+                <div class="swiper-slide grid-item item6">
+                    <img class="icon" src="img/icon7.png" alt="">
+                    <h5 class="h3-white mb-4">Digitale paspoorten</h5>
+                </div>
+                <div class="swiper-slide grid-item item7">
+                    <img class="icon" src="img/icon7.png" alt="">
+                    <h5 class="h3-white mb-4">Beroeps certificaten</h5>
+                </div>
+
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="block4 block4-img">
+            <div class="content-block row pl-4 pr-4">
+                <div class="frame-white col-lg-6 col-md-12">
+                    <h2 class="h2-blue-centered">
+                        Jet identiteit veilig online te gebruiken
+                    </h2>
+                    <p class="body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <button class="green-button" style="display: block; margin: auto;">
+                        Meer over onze services
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px; max-width: 1200px; margin: auto;">
+            <h2 class="h3-blue pl-4">
+                Certificeringen en goedgekeurde leveranciers
+            </h2>
+        </section>
+
+        <section>
+            <div class="content-block row pl-4 pr-4 pb-5">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-5">
+                <img class="centered-img" src="img/iso.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-5">
+                   <img class="centered-img" src="img/iso.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-5">
+                   <img class="centered-img" src="img/iso.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-5">
+                   <img class="centered-img" src="img/iso.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

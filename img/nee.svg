@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="50px" viewBox="0 0 180 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Button/Secundair ja nee Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="50" rx="7"></rect>
+    </defs>
+    <g id="Visual-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-23.000000, -7.000000)">
+            <g id="Button/Secundair-ja-nee" transform="translate(23.000000, 7.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect stroke="#1EC268" stroke-width="1.5" x="0.75" y="0.75" width="178.5" height="48.5" rx="7"></rect>
+                <text id="Ja" mask="url(#mask-2)" font-family="Helvetica" font-size="20" font-weight="normal" fill="#1EC268">
+                    <tspan x="86.6552734" y="35">Nee</tspan>
+                </text>
+                <g id="Icon/Kruis-Groen" mask="url(#mask-2)" fill="#1EC268" fill-rule="evenodd">
+                    <g transform="translate(25.000000, 0.000000)" id="Combined-Shape">
+                        <path d="M24.1666667,24.1666667 L24.1666667,15.8333333 C24.1666667,15.373096 24.5397627,15 25,15 C25.4602373,15 25.8333333,15.373096 25.8333333,15.8333333 L25.8333333,24.1666667 L34.1666667,24.1666667 C34.626904,24.1666667 35,24.5397627 35,25 C35,25.4602373 34.626904,25.8333333 34.1666667,25.8333333 L25.8333333,25.8333333 L25.8333333,34.1666667 C25.8333333,34.626904 25.4602373,35 25,35 C24.5397627,35 24.1666667,34.626904 24.1666667,34.1666667 L24.1666667,25.8333333 L15.8333333,25.8333333 C15.373096,25.8333333 15,25.4602373 15,25 C15,24.5397627 15.373096,24.1666667 15.8333333,24.1666667 L24.1666667,24.1666667 Z" transform="translate(25.000000, 25.000000) rotate(45.000000) translate(-25.000000, -25.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

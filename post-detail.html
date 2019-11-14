@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section>
+            <div class="content-block-services pl-5 pr-5">
+                <a href="news.html" class="contact-back body"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Nieuws & blog</a>
+                <h1 class="h1-blue mt-3">
+                    Met eHerkenning inloggen op het werkgeversportaal UWV
+                </h1>
+                <div class="container-floats mt-5">
+                    <p class="body-green  float-left">
+                        07 mei 2019
+                    </p>
+                    <div class="container-download float-right">
+                        <p class="body float-left">
+                            Download PDF
+                        </p>
+                        <img src="img/Download.svg" alt="" class="float-right">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section>
+            <div class="content-block row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6 order-lg-1 order-md-2">
+
+                    <p class="body">
+                        Vanaf 1 november 2018 kunnen ondernemers met eHerkenning inloggen op het werkgeversportaal van UWV. De huidige 160.000 gebruikers gebruiken dit portaal bijvoorbeeld om belangrijke zaken rondom werknemersverzekeringen te regelen. Deze doelgroep bestaat niet alleen uit werkgevers zelf maar ook uit intermediairs zoals administratiekantoren, re-integratiebureau's en arbodiensten.
+                    </p>
+
+                </div>
+                <div class="col-lg-3 order-lg-2 order-md-1 mb-5">
+
+                    <div class="links-module">
+                        <p class="body-small" style="text-align: left;">
+                            Links module
+                        </p>
+                        <div class="container-link-linksmodule">
+                           <img src="img/link.svg" alt="" style="margin-top: -35px;">
+                            <p class="pl-2 link-linksmodule body-small" style="text-align: left; color: #888; ">
+                                eHerkenning is het nieuwe inloggen
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-block row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6">
+                    <p class="body">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                    
+                    <p class="body mt-5">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                    </p>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="white2">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 pl-4">
+
+                        <h3 class="h3-blue">Blog</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grey pb-5">
+            <div class="content-block ">
+
+
+
+                <div class="row pl-4 pr-4 content-grey2">
+                    <div class="col-lg-4 col-md-4 mb-4">
+                        <a href="post-detail.html">
+                            <div class="post post1">
+                                <p class="h5-white" style="text-align: left;">
+                                    Bye bye cybercriminals 10 tips to protect your privacy online
+                                </p>
+                                <div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 pl-3">
+                        <a href="post-detail.html">
+                            <div class="post post2">
+                                <p class="h5-white" style="text-align: left;">
+                                    Bye bye cybercriminals 10 tips to protect your privacy online
+                                </p>
+                                <div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 pl-3">
+                        <a href="post-detail.html">
+                            <div class="post post3">
+                                <p class="h5-white" style="text-align: left;">
+                                    Bye bye cybercriminals 10 tips to protect your privacy online
+                                </p>
+                                <div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="button-white mt-3">Meer blogs tonen +</div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-mob', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

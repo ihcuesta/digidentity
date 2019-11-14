@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="72px" viewBox="0 0 91 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Icon/Medium/Swift" transform="translate(-15.000000, -24.000000)" stroke-width="2">
+            <g id="Group-23" transform="translate(16.000000, 25.000000)">
+                <path d="M31.4352653,60.9742769 C37.5185306,66.5792 45.5928163,69.9927385 54.449551,69.9927385 C73.377102,69.9927385 88.7175102,54.4093538 88.7175102,35.1872 C88.7175102,15.9668923 73.377102,0.385353846 54.449551,0.385353846 C38.7601633,0.385353846 25.5338367,11.0948923 21.4691429,25.7090462 C20.672,28.5835077 20.2256735,31.6056615 20.187102,34.7275077" id="Stroke-1" stroke="#24304B"></path>
+                <path d="M53.8777755,39.9526769 L37.5124694,24.1200615" id="Stroke-3" stroke="#24304B"></path>
+                <path d="M70.4675306,27.0565538 L54.1040612,40.1310154" id="Stroke-5" stroke="#24304B"></path>
+                <path d="M54.4499184,62.6725538 L54.4499184,68.7722462" id="Stroke-7" stroke="#24304B"></path>
+                <path d="M54.4499184,0.454215385 L54.4499184,6.55390769" id="Stroke-9" stroke="#24304B"></path>
+                <path d="M54.4159388,61.9398154 L54.4159388,67.9767385" id="Stroke-11" stroke="#24304B"></path>
+                <polyline id="Stroke-13" stroke="#19A887" points="30.3016327 23.8429538 21.1179592 23.8429538 6.45530612 23.8429538"></polyline>
+                <path d="M30.3016327,35.1046769 L0.37755102,35.1046769" id="Stroke-15" stroke="#232F4C"></path>
+                <path d="M21.1179592,45.9968 L0.37755102,45.9968" id="Stroke-17" stroke="#25E66A"></path>
+                <path d="M33.975102,56.6483692 L6.45530612,56.6483692" id="Stroke-19" stroke="#1EC268"></path>
+                <path d="M78.9589388,35.1875692 L88.7046531,35.1875692" id="Stroke-21" stroke="#24304B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

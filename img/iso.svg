@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="110px" viewBox="0 0 190 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Element/Certificate Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00482608696 0.0560592593 36.075 0.0560592593 36.075 30.2592593 0.00482608696 30.2592593"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Element/L/Certificates" transform="translate(-1029.000000, -146.000000)">
+            <g id="Element/Certificate" transform="translate(1030.000000, 146.000000)">
+                <g id="Group-5">
+                    <g id="Group-4" transform="translate(24.000000, 34.000000)">
+                        <g id="Group" transform="translate(0.000000, -2.000000)">
+                            <g id="Group-3" transform="translate(0.000000, 12.390684)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M0.00482608696,0.0560592593 L36.075,0.0560592593 C30.0520435,10.1730037 24.2293696,19.9547074 18.095413,30.2595778 C11.9976522,20.0789296 6.13315217,10.2876704 0.00482608696,0.0560592593" id="Fill-1" fill="#24304B" mask="url(#mask-2)"></path>
+                            </g>
+                            <path d="M18.1579913,3.99700435 C21.709187,0.0943562 25.9127087,-0.947199356 30.6728391,0.968689533 C34.159687,2.3725599 36.2332957,5.66524509 36.2702957,9.48109694 L0.024773913,9.48109694 C-0.256747826,5.96863398 1.90373043,2.64091176 5.44366522,1.01089324 C9.76783913,-0.9806438 13.9633174,-0.0521623186 18.1579913,3.99700435" id="Fill-4" fill="#24304B"></path>
+                        </g>
+                    </g>
+                    <text id="ISO/IEC" font-family="Helvetica" font-size="14" font-weight="normal" fill="#24304B">
+                        <tspan x="93" y="22">ISO/IEC</tspan>
+                    </text>
+                    <text id="27001" font-family="Helvetica" font-size="14" font-weight="normal" fill="#24304B">
+                        <tspan x="93" y="38">27001</tspan>
+                    </text>
+                    <text id="IS-618581" font-family="Helvetica" font-size="14" font-weight="normal" fill="#24304B">
+                        <tspan x="93" y="109">IS 618581</tspan>
+                    </text>
+                    <text id="Information-Security" font-family="Helvetica" font-size="9" font-weight="normal" fill="#24304B">
+                        <tspan x="93" y="53">Information Security</tspan>
+                        <tspan x="93" y="64.1">Management</tspan>
+                    </text>
+                    <text id="bsi." font-family="Helvetica" font-size="18" font-weight="normal" fill="#24304B">
+                        <tspan x="29" y="27">bsi.</tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#24304B" stroke-width="5" x="2.5" y="2.5" width="184" height="81" rx="40.5"></rect>
+                    <circle id="Oval" stroke="#24304B" stroke-width="6" cx="41.5" cy="42.5" r="39.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

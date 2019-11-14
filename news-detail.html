@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+       <section>
+           <div class="content-block-services pl-5 pr-5">
+                <a href="news.html" class="contact-back body" ><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Nieuws & blog</a>
+                <h1 class="h1-blue mt-3">
+                    Taking GOV.UK Verify to the next stage
+                </h1>
+                <div class="container-floats mt-5">
+                     <p class="body-green  float-left">
+                    07 mei 2019
+                </p>
+                <div class="container-download float-right">
+                    <p class="body float-left">
+                    Download PDF
+                </p>
+                <img src="img/Download.svg" alt="" class="float-right">
+                </div>
+                
+                </div>
+               
+            </div>
+            <div class="clear mb-3"></div>
+       </section>
+       
+       <section>
+           <div class="content-new-detail mt-5">
+               <p class="body pl-5 pr-5">
+                  At the Government Digital Service (GDS) our mission is to help government work better for everyone. Through digital transformation we want to put more power in the hands of citizens. And by helping government be more effective and efficient, we save money for taxpayers. 
+               </p>
+           </div>
+       </section>
+       
+       <section>
+           <div class="content-block pr-4 pl-4">
+               <img class="centered-img img-posts" src="img/new-detail.png" alt="">
+           </div>
+       </section>
+       
+        <section>
+           <div class="content-new-detail mt-5">
+               <h3 class="h3-blue pt-5 pb-5 pl-5 pr-5">Taking GOV.UK Verify to the next stage</h3>
+                 <p class="body pb-5 pl-5 pr-5">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+               </p>
+               <p class="body pb-5 pl-5 pr-5">
+                   Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+               </p>
+           </div>
+       </section>
+       
+        <section class="pl-4 pr-4">
+           <div class="tgreen">
+              <div class="content-new-detail">
+                  <p class="body pl-5 pr-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+           </div>
+       </section>
+       
+       <section>
+           <div class="content-new-detail mt-5">
+               <h3 class="h3-blue pt-5 pb-5 pl-5 pr-5">Taking GOV.UK Verify to the next stage</h3>
+                 <p class="body pb-5 pl-5 pr-5">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+               </p>
+               <p class="body pb-5 pl-5 pr-5">
+                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+               </p>
+               <p class="body pl-5 pr-5">
+                   Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+               </p>
+           </div>
+       </section>
+       
+        <section class="white">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 pl-4">
+                      
+                        <h3 class="h3-blue pt-5">Nieuws</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grey pb-5">
+            <div class="content-block ">
+                
+                <div class="row pl-4 pr-4 content-grey">
+                    <div class="col-lg-4 col-md-4 mb-4">
+                        <a href="news-detail.html"><img class="img-posts" src="img/post3.jpg" alt=""></a>
+                        <div class="content-post pb-5">
+                            <a href="news-detail.html"><h4 class="h4-blue link-post" style="text-align: left;">Digidentity gaat als een speer</h4></a>
+                            <p class="body-small" style="color: #1EC268; text-align: left;">07 mei 2019</p>
+                            <p class="body-small" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="body-small" style="text-align: left; color: #999;">5 minuten</p>
+                            <a href="news-detail.html"><div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 pl-3 mb-4">
+                        <a href="news-detail.html"><img class="img-posts" src="img/post4.jpg" alt=""></a>
+                        <div class="content-post pb-5">
+                            <a href="news-detail.html"><h4 class="h4-blue link-post" style="text-align: left;">Taking GOV.UK Verify to the next stage</h4></a>
+                            <p class="body-small" style="color: #1EC268; text-align: left;">07 mei 2019</p>
+                            <p class="body-small" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="body-small" style="text-align: left; color: #999;">5 minuten</p>
+                            <a href="news-detail.html"><div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pl-3 mb-4">
+                        <a href="news-detail.html"><img class="img-posts" src="img/post5.jpg" alt=""></a>
+                        <div class="content-post pb-5">
+                            <a href="news-detail.html"><h4 class="h4-blue link-post" style="text-align: left;">Taking GOV.UK Verify to the next stage</h4></a>
+                            <p class="body-small" style="color: #1EC268; text-align: left;">07 mei 2019</p>
+                            <p class="body-small" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="body-small" style="text-align: left; color: #999;">5 minuten</p>
+                            <a href="news-detail.html"><div class="arrow-container-posts"><img class="arrow-grid" src="img/arrow.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+        </section>
+
+       
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-mob', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

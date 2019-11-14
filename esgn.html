@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/96e845113b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="content-nav-desk">
+
+            <div class="nav-left">
+                <a href="home.html"><img width="260" height="auto" src="img/logo.png" alt=""></a>
+                <ul>
+                    <li><a class="body-small" href="services.html">Services</a></li>
+                    <li><a class="body-small" href="about-us.html">Over ons</a></li>
+                    <li><a class="body-small" href="news.html">Nieuws & blog</a></li>
+                    <li><a class="body-small" href="vacancies.html">Werken bij</a></li>
+                    <li><a class="body-small" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="search fas fa-search"></i>
+                <i class="user far fa-user"></i>
+
+                <p onclick="toggleLang()" id="language" class="body-small language">NL<i class="chevlang fas fa-chevron-down"></i></p>
+
+
+            </div>
+            <div id="menu-lang">
+
+                <a href="" id="EN" onclick="changeEN()">EN</a>
+                <a href="" id="ES" onclick="changeES()">ES</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-nav-mob container">
+            <div class="row">
+                <div class="menu col-4 mt-2">
+                    <div onclick="toggleMenu()" style="cursor: pointer;">
+                        <h2 class="h4-blue" style="text-align: left;">Menu</h2>
+                    </div>
+                </div>
+                <div class="menu col-4 mt-2">
+                    <a href="home.html" id="logo-mob" style=" margin: auto; text-align: center;"><img width="160" height="auto" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="menu col-4">
+                    <a id="search" href=""><i style="float: right;" class="search fas fa-search"></i></a>
+                    <a id="user" href=""><i style="float: right;" class="user far fa-user"></i></a>
+                    <div onclick="toggleMenu()" id="x" class="x"><i style="float: right; cursor: pointer;" class=" fas fa-times"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space" class="space" onclick="toggleMenu()">
+
+        </div>
+
+
+        <div id="menu-mob" class="menu-mob">
+            <div onclick="toggleMenu()" style="cursor: pointer;">
+                <h2 class="h4-blue" style="text-align: left;"><i class="fas fa-chevron-left"></i> Menu</h2>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="services.html">
+                    <h2 class="h4-blue" style="text-align: left;">Services</h2>
+                </a>
+                <hr />
+                <a href="about-us.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Over ons</h2>
+                </a>
+                <hr />
+                <a href="news.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Nieuws & blog</h2>
+                </a>
+                <hr />
+                <a href="vacancies.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Werken bij</h2>
+                </a>
+                <hr />
+                <a href="contact.html">
+                    <h2 class="h4-blue" style="text-align: left;  ">Contact</h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- END MENU -->
+    <main>
+        <section class="block-img-esgn head-img">
+            <div class="content-block-standard container">
+                <div class="row bottom-align">
+                    <div class="col-lg-12 col-md-12 ml-4 ">
+                        <h1 class="h1-white pb-4">
+                            Nooit meer printen met eSGN
+                        </h1>
+
+                        <button class="green-button">Contact&nbsp;sales&nbsp;team</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+       <section class="offwhite-bg-sm">
+           <div class="content-block pb-5">
+               <div class="row">
+                   <div class="col-lg-4 col-md-4">
+                       <img height="80" width="auto" class="centered-img mb-3" src="img/mobile.svg" alt="">
+                       <h3 style="text-align: center;" class="h3-blue">Gemak</h3>
+                       <p class="body-small pb-4">De ondertekenaar kan vanaf iedere plek en op elk gewenst moment volledig digitaal zakendoen.</p>
+                   </div>
+                   <div class="col-lg-4 col-md-4">
+                       <img height="80" width="auto" class="centered-img mb-3" src="img/watch.svg" alt="">
+                       <h3 style="text-align: center;" class="h3-blue">Kostenbesparend</h3>
+                       <p class="body-small pb-4">Verminder operationele kosten en stop handmatige processen. Zo hoef je ook nooit meer te herinneren of na te bellen.</p>
+                   </div>
+                   <div class="col-lg-4 col-md-4">
+                       <img height="80" width="auto" class="centered-img mb-3" src="img/print.svg" alt="">
+                       <h3 style="text-align: center;" class="h3-blue">Rechtsgeldig</h3>
+                       <p class="body-small pb-4">De gekwalificeerde digitale handtekening is 100% rechtsgeldig en we voldoen volledig aan de laatste veiligheidseisen. </p>
+                   </div>
+               </div>
+           </div>
+       </section>
+       
+       <section class="text-cert-block1 pr-4 pl-4">
+           <h2 class="h2-blue pb-3">Nooit meer printen, scannen of postzegels plakken</h2>
+           <p class="body">
+               Met eSGN van Digidentity kun je PDF-documenten op een rechtsgeldige manier digitaal ondertekenen. Deze digitale handtekening zorgt ook voor zekerheid dat het document nadien niet bewerkt is. <br><br>
+
+Een elektronische of digitale handtekening is equivalent aan een handgeschreven handtekening. Een elektronische handtekening bestaat uit cryptografische elektronische gegevens die zijn gekoppeld aan een digitaal document. 
+           </p>
+       </section>
+       
+      
+       
+       
+       <section class="text-cert-block3 pr-4 pl-4">
+           <div class="container-cert-block3 rounded certificate1">
+               <h2 class="h2-blue pb-4" style="text-align: center;">eSGN Basic</h2>
+               <p class="body">
+                   Ga snel aan de slag met een digitale handtekening. Je kunt deze elektronische handtekening gebruiken om bijvoorbeeld je verzekeringspolis (in PDF-formaat) te ondertekenen: als je daarna je premie betaalt aan de verzekeraar en zij hebben jouw adresgegevens, dan is dit type handtekening voldoende betrouwbaar (en rechtsgeldig). 
+               </p>
+           </div>
+       </section>
+       
+       <section class="text-cert-block3 pr-4 pl-4">
+           <div class="container-cert-block3 rounded certificate2">
+               <h2 class="h2-blue pb-4" style="text-align: center;">eSGN Advanced</h2>
+               <p class="body">
+                   eSGN Advanced is een rechtsgeldige digitale handtekening. De geavanceerde digitale handtekening biedt een hoge mate van betrouwbaarheid en biedt juridische zekerheid, omdat de identiteit van de ondertekenaar is vastgesteld en door ons. Deze handtekening wordt bijvoorbeeld gebruikt om je belastingaangifte in te dienen. 
+               </p>
+           </div>
+       </section>
+       
+       <section class="text-cert-block3 pr-4 pl-4">
+           <div class="container-cert-block3 rounded certificate3">
+               <h2 class="h2-blue pb-4" style="text-align: center;">eSGN Qualified</h2>
+               <p class="body">
+eSGN Qualified is de meest betrouwbare digitale handtekening. Het is een gekwalificeerde digitale handtekening die juridisch equivalent is aan een handgeschreven handtekening. In het geval van een juridisch geschil moet het tegendeel worden bewezen.                </p>
+           </div>
+       </section>
+       
+       <section>
+           <button class="green-button button-cert">Direct&nbsp;aanvragen</button>
+       </section>
+       
+        <section class="block4 block4-img">
+            <div class="content-block row pl-4 pr-4">
+                <div class="frame-white col-lg-6 col-md-12">
+                    <h2 class="h2-blue-centered">
+                        Wij staan altijd 
+voor u klaar
+                    </h2>
+                    <p class="body">
+                        Neem contact met ons op om de mogelijkheden te bespreken rondom veiligheid van je business. Een van onze medewerkers zorgt dat uw vraag meteen wordt beantwoord. Wij denken verder om samen tot de beste oplossing te komen.
+                    </p>
+                    <button class="green-button" style="display: block; margin: auto;">
+                        Neem contact op
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="block" style="margin-bottom: 80px;">
+            <div class="content-block container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ml-4">
+                        <h3 class="h3-blue mb-4">
+                            Digidentity verleent service aan
+                        </h3>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/netherlands.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/canada.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/european-comission.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img width="100%" height="auto" src="img/Gov-UK.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Producten</h4>
+                        <p class="footer-text"><a href="" class="footer-text">SSL certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">SBR certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Beroeps certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">PKI certificaat</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">eSGN</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Over Digidentity</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Nieuws</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Vacatures</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Gecertificeerd</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Lidmaatscappen</a></p>
+
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Contact</h4>
+                        <p class="footer-text"><a href="" class="footer-text">Digidentity BV</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Waldorpstraat 17p 2521 CA </a></p>
+                        <p class="footer-text"><a href="" class="footer-text">Den Haag Postbus 19148</a></p>
+                        <p class="footer-text"><a href="" class="footer-text">2500 CC Den Haag</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">info@digidentity.eu</a></p>
+                    </div>
+                    <div class="mb-5 col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="footer-text" style="font-weight: 600; margin-bottom: 35px; font-size: 16px;">Vragen?</h4>
+                        <p class="footer-text"><a href="" class="footer-text">+44(0)330 05 83 454</a></p>
+                        <p class="footer-text"><a href="" class="footer-text" style="text-decoration: underline;">helpdesk@digidentity.co.uk</a></p>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 pb-2">
+                        <p class="footer-text" style="text-align: center; "><a class="footer-text" href="">Terms & conditions</a> | <a class="footer-text" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="col-lg-3 social-icons-container">
+                        <a href=""><i class="social-icons fab fa-instagram mr-3 "></i></a>
+                        <a href=""><i class="social-icons fab fa-twitter mr-3 ml-3"></i></a>
+                        <a href=""><i class="social-icons fab fa-facebook-f mr-3 ml-3"> </i></a>
+                        <a href=""><i class="social-icons fab fa-linkedin-in  ml-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 20,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
